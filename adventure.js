@@ -67,74 +67,172 @@ gsap.defaults({
 });
 
 // Home
-gsap.fromTo(".showcase", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1 });
+gsap.fromTo(
+  ".showcase",
+  { opacity: 0, scale: 0 },
+  {
+    opacity: 1,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".home",
+      toggleActions: "restart none restart none",
+    },
+  }
+);
+
 gsap.fromTo(
   ".socials",
   { opacity: 0, y: 800 },
-  { opacity: 1, y: 0, ease: "slow(0.7, 0.4, false)", duration: 1 }
+  {
+    opacity: 1,
+    y: 0,
+    ease: "slow(0.7, 0.4, false)",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".home",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 
 // Order
 gsap.fromTo(
   ".anim-1",
   { opacity: 0, x: -500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-1" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-1",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".anim-2",
   { opacity: 0, x: 500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-1" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-1",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".anim-3",
   { opacity: 0, x: -500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-2" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-2",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".anim-4",
   { opacity: 0, x: 500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-2" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-2",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".anim-5",
   { opacity: 0, x: -500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-3" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-3",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".anim-6",
   { opacity: 0, x: 500 },
-  { opacity: 1, x: 0, scrollTrigger: ".step-3" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".step-3",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 
 // Explore
 gsap.fromTo(
   ".explore-title",
   { opacity: 0, x: 200 },
-  { opacity: 1, x: 0, scrollTrigger: ".explore" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".explore",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 gsap.fromTo(
   ".explore-para",
   { opacity: 0, x: -200 },
-  { opacity: 1, x: 0, scrollTrigger: ".explore" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".explore",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 
 // Choose
 gsap.fromTo(
   ".choose",
   { opacity: 0, y: 500 },
-  { opacity: 1, y: 0, scrollTrigger: ".choose" }
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".choose",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 
 // Book
 gsap.fromTo(
   ".book-info",
   { opacity: 0, scale: 0 },
-  { opacity: 1, scale: 1, scrollTrigger: ".book" }
+  {
+    opacity: 1,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".book",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
 
 // Gallery
 gsap.fromTo(
   ".gallery-info",
   { opacity: 0, x: -500 },
-  { opacity: 1, x: 0, scrollTrigger: ".gallery" }
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".gallery",
+      toggleActions: "restart none restart none",
+    },
+  }
 );
